@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expor a porta (Render usa PORT automaticamente)
-EXPOSE 80
+EXPOSE $PORT
 
-# Comando para rodar a aplicação, usando a porta da variável de ambiente ou 80 por padrão
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+# Comando para rodar a aplicação, usando a porta da variável de ambiente
+CMD uvicorn main:app --host 0.0.0.0 --port $PORT
