@@ -1,0 +1,24 @@
+{
+  "category_to_index": {
+    "boot": 0,
+    "casual": 1,
+    "heel": 2,
+    "slide": 3,
+    "sneaker": 4
+  },
+  "index_to_category": {
+    "0": "boot",
+    "1": "casual",
+    "2": "heel",
+    "3": "slide",
+    "4": "sneaker"
+  },
+  "num_classes": 5,
+  "categories_list": [
+    "boot",
+    "casual",
+    "heel",
+    "slide",
+    "sneaker"
+  ]
+}
