@@ -16,5 +16,5 @@ COPY . .
 # Expor a porta (Render usa PORT automaticamente)
 EXPOSE 80
 
-# Comando para rodar a aplicação
+# Comando para rodar a aplicação, usando a porta da variável de ambiente ou 80 por padrão
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
